@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Unit Converter</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Unit Converter</h1>
+
+  <div class="converter">
+    <input type="number" id="inputValue" placeholder="Enter value">
+    <select id="unitFrom">
+      <option value="cm">Centimeters (cm)</option>
+      <option value="m">Meters (m)</option>
+      <option value="km">Kilometers (km)</option>
+      <option value="inch">Inches (in)</option>
+      <option value="ft">Feet (ft)</option>
+      <option value="yard">Yards (yd)</option>
+      <option value="mile">Miles (mi)</option>
+      <option value="nauticalMile">Nautical Miles (nmi)</option>
+    </select>
+    <br> 
+    <span>To</span>
+    <select id="unitTo">
+      <option value="cm">Centimeters (cm)</option>
+      <option value="m">Meters (m)</option>
+      <option value="km">Kilometers (km)</option>
+      <option value="inch">Inches (in)</option>
+      <option value="ft">Feet (ft)</option>
+      <option value="yard">Yards (yd)</option>
+      <option value="mile">Miles (mi)</option>
+      <option value="nauticalMile">Nautical Miles (nmi)</option>
+    </select>
+    <br> 
+    <button onclick="convert()">Convert</button>
+  </div>
+
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
