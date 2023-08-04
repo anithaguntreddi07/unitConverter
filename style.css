@@ -1,44 +1,80 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #e1a0a0;
-  margin: 50px;
-  padding: 50px;
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(5, 6, 6);
 }
 
-h1 {
-  text-align: center;
-  font-size: 50px;
+.container
+{
+    margin: 5px;
+    padding: 5px;
+    width: 700px;
+    height: 360px;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid black;
+    box-shadow: 0px 0px 5px 2px #909c9c;
+}
+.converter-title
+{
+    text-align: center;
+    margin: 13px, 0px;
+    font-family: Times, serif;
+    font-size: 40px;
+}
+.box
+{
+    height: 300px;
+    width: 660px;
+    background-color: rgb(31, 203, 194);
+    border: 2px solid rgb(0, 0, 0);
+    padding: 1px;
+    margin-left: 19px;
+    
+}
+#OptionType
+{
+    margin-left: 115px;
+    width: 420px;
+    height: 40px;
+    margin-top: 40px;
+    border: 1px solid black;
+    font-size: medium;
 }
 
-.converter {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
+input
+{
+    height: 35px;
+    text-align: center;
+    margin-top: 55px;
+    width: 200px;
+    border: 1px solid black;
+    font-family: sans-serif;
+    font-weight: bold;
+    
 }
-
-.converter input {
-  width: 100px;
-  padding: 10px;
-  font-style: italic;
+#input
+{
+    margin-left: 115px;
+    
 }
-
-.converter select {
-  padding: 20px 40px;
-  font-size: 15px;
-  margin-left: 20px;
+#InputType,#ResultType
+{
+    width: 202.63px;
+    height: 34px;
+    border: 1px solid black;
+    margin-left: 115px;
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+    cursor: pointer;
 }
-
-.converter button {
-  padding: 10px 15px;
-  margin-left: 20px;
-  font-size:20px;
-  background-color: rgb(242, 241, 254);
-  
-}
-
-#result {
-  text-align: center;
-  font-weight: bold;
-  font-size: 40px;
+#ResultType
+{
+    margin-left: 12.5px;
 }
