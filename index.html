@@ -1,42 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Unit Converter</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Unit Converter</h1>
+    
+    <div class="container">
 
-  <div class="converter">
-    <input type="number" id="inputValue" placeholder="Enter value">
-    <select id="unitFrom">
-      <option value="cm">Centimeters (cm)</option>
-      <option value="m">Meters (m)</option>
-      <option value="km">Kilometers (km)</option>
-      <option value="inch">Inches (in)</option>
-      <option value="ft">Feet (ft)</option>
-      <option value="yard">Yards (yd)</option>
-      <option value="mile">Miles (mi)</option>
-      <option value="nauticalMile">Nautical Miles (nmi)</option>
-    </select>
-    <br> 
-    <span>To</span>
-    <select id="unitTo">
-      <option value="cm">Centimeters (cm)</option>
-      <option value="m">Meters (m)</option>
-      <option value="km">Kilometers (km)</option>
-      <option value="inch">Inches (in)</option>
-      <option value="ft">Feet (ft)</option>
-      <option value="yard">Yards (yd)</option>
-      <option value="mile">Miles (mi)</option>
-      <option value="nauticalMile">Nautical Miles (nmi)</option>
-    </select>
-    <br> 
-    <button onclick="convert()">Convert</button>
-  </div>
+        <h1 class="converter-title">Unit Converter</h1>
 
-  <div id="result"></div>
+        <div class="box">
+        <select id="OptionType">
+            <option value="Length">Length</option>
+            <option value="Weight">Weight</option>
+            <option value="Temperature">Temperature</option>
+            <option value="Time">Time</option>
+        </select>
 
-  <script src="script.js"></script>
+        <input type="text" placeholder="Input" id="input">
+        <span> = </span>
+        <input type="text" placeholder="Result" id="result">
+
+        <select id="InputType">
+            <option value="meter">Meter</option>
+            <option value="kilometer">Kilometer</option>
+            <option value="centimeter">Centimeter</option>
+            <option value="Degree Celsius">Degree Celsius</option>
+            <option value="Fahrenheit">Fahrenheit</option>
+            <option value="Kelvin">Kelvin</option>
+
+            <option value="Kilogram">Kilogram</option>
+            <option value="Gram">Gram</option>
+            <option value="Miligram">Miligram</option>
+            <option value="Microgram">Microgram</option>
+            <option value="Pound">Pound</option>
+
+            <option value="Minute">Minute</option>
+            <option value="Hour">Hour</option>
+            <option value="Second">Second</option>
+        </select>
+
+        <select id="ResultType">
+            <option value="meter">Meter</option>
+            <option value="kilometer">Kilometer</option>
+            <option value="centimeter">Centimeter</option>
+            <option value="Degree Celsius">Degree Celsius</option>
+            <option value="Fahrenheit">Fahrenheit</option>
+            <option value="Kelvin">Kelvin</option>
+
+            <option value="Kilogram">Kilogram</option>
+            <option value="Gram">Gram</option>
+            <option value="Miligram">Miligram</option>
+            <option value="Microgram">Microgram</option>
+            <option value="Pound">Pound</option>
+
+            <option value="Minute">Minute</option>
+            <option value="Hour">Hour</option>
+            <option value="Second">Second</option>
+
+
+        </select>
+    <script src="script.js"></script>
 </body>
+
 </html>
